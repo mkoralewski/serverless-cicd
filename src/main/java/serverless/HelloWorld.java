@@ -8,7 +8,7 @@ public class HelloWorld implements RequestHandler<HelloWorldInput, HelloWorldOut
     @Override
     public HelloWorldOutput handleRequest(HelloWorldInput input, Context ctx) {
         HelloWorldOutput output = new HelloWorldOutput();
-        output.setMessage("Witam " + input.getName() + ", w swiecie Serverless!!!");
+        output.setMessage("Witaj " + input.getName() + ", w swiecie Serverless!");
         return output;
     }
 
